@@ -1,3 +1,3 @@
 <?php
 
-echo "<b>Ime<br>Priimek<br>00.00.0000<b>";
+echo "<b>Gašper<br>Priimek<br>00.00.0000<b>";
