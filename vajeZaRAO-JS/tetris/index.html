@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+</head>
+
+<body>
+    <div id="nameCont">
+        <p class="descCtrl">Name:</p>
+        <input type="text" id="nameInsert" />
+        <button id="nameEnter">ENTER</button>
+    </div>
+    <div id="controls">
+        <div class="playersCont">
+            <div class="playerControls" id="playercont0"></div>
+            <div class="playerControls" id="playercont1"></div>
+            <div class="playerControls" id="playercont2"></div>
+        </div>
+        <p class="descCtrl" id="controlError"></p>
+        <button id="resetCtrl">RESET CONTROLS</button>
+        <button id="clrScore">CLEAR SCOREBOARD</button>
+    </div>
+    <div class="title">
+        <img src="media/tetris_logo.png">
+    </div>
+    <div id="content">
+    </div>
+    <div id="butAudContainer">
+        <div>
+            <button id="control">CONTROLS</button>
+        </div>
+        <div>
+            <button id="butMode">MULTIPLAYER</button>
+        </div>
+        <audio id="audio" controls autoplay loop>
+            <source src="./tetrisSoundtrack.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <footer>
+        <div class="made">
+            <p class="madeBy">made by: Gašper Nemgar, R4.B<br>
+                prof: Aiken Tine Ahac
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/logic.js"></script>
+</body>
+
+</html>

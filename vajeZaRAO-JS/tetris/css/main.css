@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100dvw;
+    height: 100dvh;
+    color: white;
+    background-color: #000;
+
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    height: 15%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.game-container {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+#scoreboard-container {
+    height: 300px;
+    width: 300px;
+}
+
+#scoreboard {
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+.next-container {
+    height: 150px;
+    width: 125px;
+}
+
+.next {
+    border-radius: 8px;
+    border: 1px solid white
+}
+
+.tetris {
+    border-radius: 8px;
+    border: 1px solid white
+}
+
+
+/*------button mode------*/
+#butAudContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#butMode,
+#control {
+    width: 100px;
+    height: 100%;
+    border: 2px solid #fff;
+    background-color: #000;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+#butMode:focus,
+#control:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
+}
+
+/*------audio tag------*/
+audio {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+audio:focus {
+    outline: none;
+    border-color: #4a90e2;
+    color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
+}
+
+/*-------------------controls popup------------------------------*/
+#controls {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 250px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000;
+    border: 1px solid white;
+    visibility: hidden;
+}
+
+.ctrl {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+}
+
+.swto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descCtrl {
+    color: white;
+    max-width: 80%;
+    width: auto;
+}
+
+.playerControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playersCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text_desc {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+/*-------------------name popup------------------------------*/
+#nameCont {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 20%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000;
+    row-gap: 10%;
+    visibility: hidden;
+    border: 1px solid white;
+}
+
+/*-----------------------footer------------------------------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 10%;
+    background-color: teal;
+}
+
+.made {
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
