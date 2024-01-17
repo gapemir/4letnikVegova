@@ -1,0 +1,9 @@
+.forma {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tile {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+
+
+.kartica {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+}
+
+.ido {
+    min-width: 45%;
+    min-height: 30px;
+
+    margin: 2px;
+}
+
+.vsebina {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.podatki {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    margin-left: 5px;
+}
+
+.slika {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
