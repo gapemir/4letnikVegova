@@ -45,7 +45,7 @@ SET OsnovnaCena = OsnovnaCena - 350
 WHERE Status = 'dobava 1 mesec';
 /*k*/
 INSERT INTO Kupec
-VALUES (123456789,'Gašper','Nemgar','Unec 161','Rakek');
+VALUES (123456789,'Gašper','Priimek','Vas 123','Mesto');
 /*l*/
 INSERT INTO Prodaja 
 VALUES(5,123456789,'2023-11-07',4,0.4,0);
