@@ -1,0 +1,20 @@
+.cont {
+    display: flex;
+    width: 300px;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+
+
+#obstojecaOcena {
+    width: 50px;
+}
+
+
+.popOceneCont{
+    display: flex;
+    flex-direction: column;
+}
+
+
