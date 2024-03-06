@@ -1,0 +1,10 @@
+<?php
+$email="email";
+$ime="ime";
+$jezik="slovenščina";
+$jezikKoda="sl_si";
+$kraj="kraj";
+$priimek="priimek";
+$spol="spol";
+$submit="potrdi";
+$tel="telefon";

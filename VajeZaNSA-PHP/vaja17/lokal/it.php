@@ -1,0 +1,10 @@
+<?php
+$email="e-mail";
+$ime="nome";
+$jezik="italijanščina";
+$jezikKoda="it_it";
+$kraj="posto";
+$priimek="cognome";
+$spol="genere";
+$submit="invia";
+$tel="telefono";

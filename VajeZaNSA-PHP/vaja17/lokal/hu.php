@@ -1,0 +1,10 @@
+<?php
+$email="email";
+$ime="név";
+$jezik="madžarščina";
+$jezikKoda="hu_hu";
+$kraj="hely";
+$priimek="vezetéknév";
+$spol="neme";
+$submit="Beküldés";
+$tel="telefon";
