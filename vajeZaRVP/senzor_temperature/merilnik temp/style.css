@@ -1,0 +1,116 @@
+.circle {
+    padding: 0px;
+    width: 20rem;
+    height: 10rem;
+
+    background-color: rgb(200, 200, 200);
+    border-radius: 10rem 10rem 0 0;
+}
+
+.kazalcek {
+    margin: 0px;
+    margin-top: -0.2rem;
+
+    width: 10rem;
+    height: 0.4rem;
+
+    position: relative;
+    top: 9.8rem;
+    left: 0.2rem;
+
+    background-color: rgb(50, 50, 50);
+    border-radius: 100% 0 0 100%;
+
+
+    transform-origin: 9.8rem 0.2rem;
+
+    opacity: 70%;
+}
+
+.rdec {
+    background-color: rgb(0, 13, 199);
+    margin-top: 0px;
+    height: 0.2rem;
+    width: 8rem;
+    left: 2rem;
+    transform-origin: 7.9rem 0.1rem;
+}
+
+
+.slider {
+    margin-top: 5rem;
+    appearance: none;
+    width: 50%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(0, 13, 199);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: rgb(0, 13, 199);
+    cursor: pointer;
+}
+
+span {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.child {
+    width: 50%;
+}
+
+#c20 {
+    position: absolute;
+    top: 8.2rem;
+    left: 1rem;
+}
+
+#c25 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+#c30 {
+    position: absolute;
+    top: 0rem;
+    left: 9.5rem;
+}
+
+#c35 {
+    position: absolute;
+    top: 3rem;
+    left: 16rem;
+}
+
+#c40 {
+    position: absolute;
+    top: 8.2rem;
+    left: 18.5rem;
+}

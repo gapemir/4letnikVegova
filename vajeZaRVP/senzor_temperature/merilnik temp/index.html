@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stevci</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="child">
+
+            <div class="circle">
+                <span id="c20">20</span>
+                <span id="c25">25</span>
+                <span id="c30">30</span>
+                <span id="c35">35</span>
+                <span id="c40">40</span>
+                <div class="rdec kazalcek" id="target_kaz"></div>
+                <div class="kazalcek" id="current_kaz"></div>
+            </div>
+
+            <span>Raw: </span>
+            <span id="raw"></span><br>
+            <span>Volts: </span>
+            <span id="volt"></span><span>V</span><br>
+            <span>Current: </span>
+            <span id="val"></span><span>°C</span><br>
+            <span>Target: </span>
+            <span id="tar"></span><span>°C</span><br>
+
+            <input id="slider" type="range" min="20" max="40" value="25" class="slider"><br><br>
+
+        </div>
+        <table id="fila" border="">
+            <tr><th>Realna</th><th>Željena</th><th>Čas</th></tr>		
+            <tr><td id="00"></td><td id="01"></td><td id="02"></td></tr>
+            <tr><td id="10"></td><td id="11"></td><td id="12"></td></tr>
+            <tr><td id="20"></td><td id="21"></td><td id="22"></td></tr>
+            <tr><td id="30"></td><td id="31"></td><td id="32"></td></tr>
+            <tr><td id="40"></td><td id="41"></td><td id="42"></td></tr>
+            <tr><td id="50"></td><td id="51"></td><td id="52"></td></tr>
+            <tr><td id="60"></td><td id="61"></td><td id="62"></td></tr>
+            <tr><td id="70"></td><td id="71"></td><td id="72"></td></tr>
+            <tr><td id="80"></td><td id="81"></td><td id="82"></td></tr>
+            <tr><td id="90"></td><td id="91"></td><td id="92"></td></tr>
+        </table>
+        <div style="display: flex;flex-direction: column;">
+            stevilo v arhivu<input type="number" id="inputStRecordsInArchive" value="50">
+            <button id="buttonResetArchive">RESET ARCHIVE</button>
+        </div>
+        <div>
+            <a href="stats.html">STATS</a>
+        </div>
+    </div>
+
+    <canvas id="myChart" style="width:80%;height:400px;"></canvas>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
