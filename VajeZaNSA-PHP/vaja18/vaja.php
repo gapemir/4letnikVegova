@@ -7,8 +7,8 @@ SERVER or HOST = 193.2.190.23
 		PASSWORD=r4abcd_?#243
 
 mysql -u r4abcd -h 193.2.190.23 -P 3306 -p
-CALL createZbirka24('gasper2112','nemga12516');
-nemga12516
+CALL createZbirka24('gasper2112','testtesttest');
+
 
 CREATE TABLE obisk(
     id int PRIMARY KEY AUTO_INCREMENT,
