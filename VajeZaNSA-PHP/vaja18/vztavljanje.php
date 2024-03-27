@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("193.2.190.23", "gasper2112", "nemga12516", "R4_Nemgar30", "3306");
+$mysqli = new mysqli("193.2.190.23", "gasper2112", "testtesttest", "R4_Nemgar30", "3306");
 
 $stmt = $mysqli->prepare("INSERT INTO obisk(opomba) VALUES(?);");
 
