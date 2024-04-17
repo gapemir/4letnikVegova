@@ -9,7 +9,7 @@ $mysqli->set_charset('utf8');
 $selectVse = "SELECT * FROM strezba";
 $stmt  = $mysqli->prepare("SELECT * FROM strezba WHERE id = ?");
 $stmtRacunSt  = $mysqli->prepare("SELECT * FROM prodaja_repl WHERE strac = ?");
-$stmtRacunKelnar  = $mysqli->prepare("SELECT * FROM prodaja_repl JOIN strezba ON strezba.id=prodaja_repl.strezba WHERE strezba = ?");
+$stmtRacunKelnar  = $mysqli->prepare("SELECT * FROM prodaja_repl JOIN strezba ON strezba.id=prodaja_repl.strezba WHERE ime = ?");
 
 switch ($method | $uri) {
         /*
