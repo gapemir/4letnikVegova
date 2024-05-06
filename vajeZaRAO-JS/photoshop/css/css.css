@@ -1,0 +1,326 @@
+:root {
+    --first-color-light: #EF87BE;
+    --second-color-light: #F9A3CB;
+    --third-color-light: #FCBCD7;
+    --fourth-color-light: #FFCEE6;
+
+    --first-color-dark: #001133;
+    --second-color-dark: #00264a;
+    --third-color-dark: #153b62;
+    --fourth-color-dark: #32527b;
+
+    --text-color: white;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    color: var(--text-color)
+}
+
+/* Dark mode */
+body.light-mode {
+    --fourth-color: var(--fourth-color-light);
+    --first-color: var(--first-color-light);
+    --second-color: var(--second-color-light);
+    --third-color: var(--third-color-light);
+    --slider-color: var(--third-color);
+    background-color: var(--second-color);
+}
+
+/* Light mode */
+body.dark-mode {
+    --fourth-color: var(--fourth-color-dark);
+    --first-color: var(--first-color-dark);
+    --second-color: var(--second-color-dark);
+    --third-color: var(--third-color-dark);
+    --slider-color: var(--third-color);
+    background-color: var(--second-color);
+}
+
+button {
+    height: 20px;
+    flex-grow: 1;
+    background-color: var(--first-color);
+    border-radius: 5px;
+    border: 1px solid var(--third-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--debug-color);
+    border-radius: 5px;
+
+}
+
+.horGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 25px;
+    align-items: center;
+    gap: 2px;
+}
+
+.horGroupFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px 3px;
+}
+
+/*----------*/
+.controls {
+    max-width: 25%;
+    min-width: 300px;
+
+}
+
+.cont {
+    display: flex;
+    height: 100%;
+}
+
+.mainControlCont {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    min-width: 275px;
+    background-color: var(--fourth-color);
+    padding: 5px;
+}
+
+.chartCont {
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+.settings {
+    margin-top: 5px;
+    border: 1px solid var(--first-color);
+}
+
+#designedCont {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+#selectDiv {
+    position: absolute;
+    display: none;
+    border: 1px dotted black;
+}
+
+input[type="range"] {
+    /* removing default appearance */
+    appearance: none;
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    /*  slider progress trick  */
+    height: 12px;
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+    height: 15px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0px;
+    width: 0px;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: -400px 0 0 400px var(--slider-color);
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 0px;
+    width: 0px;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: -400px 0 0 400px var(--slider-color);
+}
+
+.sliderCont {
+    position: relative;
+    flex-grow: 1;
+    width: 129px;
+}
+
+.heart {
+    pointer-events: none;
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+    background-image: url();
+    /*needs to be url()*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.heartNoHeart {
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    background-color: var(--slider-color);
+    border-radius: 100%;
+    border: 2px solid white;
+    background-image: none;
+}
+
+
+/*styling number and color input*/
+input[type="number"] {
+    border-radius: 5px;
+    border: 0px;
+    width: 50px;
+}
+
+input[type="color"] {
+    appearance: none;
+    border: none;
+    width: 30px;
+    height: 18px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+    padding: 0;
+    border: none;
+}
+
+
+/*upload*/
+.file-input {
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    cursor: pointer;
+    height: 18px;
+    background-color: var(--first-color);
+    border-radius: 5px;
+    border: 1px solid var(--third-color);
+    color: var(--text-color);
+    width: 125px
+}
+
+.file-input input[type=file] {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.file-input-text {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*drag & drop*/
+.drag-area {
+    position: absolute;
+    top: 0;
+    border: 2px dashed var(--first-color);
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.active {
+    border: 2px solid #fff;
+}
+
+.drag-area span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    flex-grow: 0;
+}
+
+/*loading div*/
+.loadingDiv {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: none;
+    top: 0;
+    z-index: 9;
+}
+
+.show {
+    display: flex
+}
+
+#loader {
+    margin: auto;
+    border: 10px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 10px solid var(--first-color);
+    width: 50px;
+    height: 50px;
+    /*animation: spinner 3s linear infinite;*/
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
