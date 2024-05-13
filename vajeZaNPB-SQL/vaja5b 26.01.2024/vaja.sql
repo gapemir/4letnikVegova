@@ -4,7 +4,12 @@ WHERE EMSO IN (
     SELECT EMSO FROM Najem N
     JOIN Vozilo V ON V.SerStev = N.SerStev
     JOIN Proizvajalec P ON P.ProizvajalecID = V.ProizvajalecID
-    WHERE EXTRACT(YEAR FROM Datum_najema) = 2012 AND Poreklo IN('Nemcija', 'Italija')
+    WHERE EXTRACT(YEAR FROM Datum_najema) = 2012 AND Poreklo IN('Nemcija','Italija')
+) AND EMSO NOT IN (
+    SELECT EMSO FROM Najem N
+    JOIN Vozilo V ON V.SerStev = N.SerStev
+    JOIN Proizvajalec P ON P.ProizvajalecID = V.ProizvajalecID
+    WHERE EXTRACT(YEAR FROM Datum_najema) = 2012 AND Poreklo NOT IN ('Nemcija','Italija')
 );
 /*2*/
 SELECT ime, priimek FROM Stranka
@@ -18,6 +23,11 @@ WHERE EMSO IN (
     JOIN Vozilo V ON V.SerStev = N.SerStev
     JOIN Proizvajalec P ON P.ProizvajalecID = V.ProizvajalecID
     WHERE EXTRACT(YEAR FROM Datum_najema) = 2012 AND Poreklo = 'Nemčija'
+) AND EMSO NOT IN (
+    SELECT EMSO FROM Najem N
+    JOIN Vozilo V ON V.SerStev = N.SerStev
+    JOIN Proizvajalec P ON P.ProizvajalecID = V.ProizvajalecID
+    WHERE EXTRACT(YEAR FROM Datum_najema) = 2012 AND Poreklo NOT IN('Nemčija','Italija')
 );
 /*3*/
 SELECT * FROM Vozilo V
